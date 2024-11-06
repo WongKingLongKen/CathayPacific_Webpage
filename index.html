@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, 
+    initial-scale=1.0">
+    <title>Cathay Pacific Analysis</title>
+    <style>
+        :root {
+            --light-sand: rgb(220, 211, 188);
+            --cathay-jade: rgb(0, 101, 100);
+            --medium-jade: rgb(54, 125, 121);
+            --sand: rgb(193, 180, 154);
+            --slate: rgb(198, 194, 193);
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: var(--light-sand);
+            color: black;
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+            background-color: var(--cathay-jade);
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .nav {
+            background-color: var(--medium-jade);
+            padding: 1rem;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+        }
+
+        .nav a:hover {
+            background-color: var(--sand);
+            border-radius: 4px;
+        }
+
+        .main-content {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .upload-section {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+        }
+
+        .analysis-section {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 8px;
+        }
+
+        .data-display {
+            text-align: center;
+            margin: 2rem 0;
+        }
+
+        .interpretation {
+            background-color: var(--slate);
+            padding: 1rem;
+            border-radius: 4px;
+            margin: 1rem 0;
+        }
+
+        .conclusion {
+            background-color: var(--sand);
+            padding: 1rem;
+            border-radius: 4px;
+            margin: 1rem 0;
+        }
+
+        .upload-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .upload-form input, .upload-form button {
+            padding: 0.5rem;
+        }   
+
+        .upload-form button {
+            background-color: var(--cathay-jade);
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .upload-form button:hover {
+            background-color: var(--medium-jade);
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Cathay Pacific Food Analysis Dashboard</h1>
+    </header>
+
+    <nav class="nav">
+        <a href="#home">Home</a>
+        <a href="#upload">Upload Images</a>
+        <a href="#analysis">Analysis</a>
+        <a href="#logout">Logout</a>
+    </nav>
+
+    <main class="main-content">
+        <section class="upload-section">
+            <h2>Reference Image Upload</h2>
+            <form class="upload-form">
+                <input type="file" accept="image/*" multiple>
+                <button type="submit">Upload Images</button>
+            </form>
+        </section>
+
+        <section class="analysis-section">
+            <h2>Waste Analysis</h2>
+            
+            <div class="data-display">
+                <!-- Data visualization will go here -->
+                <p>[Data Visualization Placeholder]</p>
+            </div>
+
+            <div class="interpretation">
+                <h3>Data Interpretation</h3>
+                <p>Detailed interpretation of the analysis will be displayed here.</p>
+            </div>
+
+            <div class="conclusion">
+                <h3>Conclusion</h3>
+                <p>Final conclusions and recommendations will be shown here.</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
